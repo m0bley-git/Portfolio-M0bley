@@ -1,0 +1,53 @@
+
+
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 80px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    flex-direction: column;
+    
+}
+
+header h1, header p {
+    margin: 0;                
+}
+
+.soustitres {
+    color: grey;
+    font-size: 30px;
+    opacity: 0.7;
+    font-family:'Times New Roman', Times, serif
+}
+
+body {
+    background-image: url(Images/accueil.jpg);
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    position: absolute;    
+    top: 10px;             
+    right: 20px;           
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;  
+    gap: 40px;     
+    font-family: monospace;  
+}
+
+main h2 {
+    color: white;
+    text-align: left;
+    padding: 20px;
+    left: 20px;
+    font-size: 50px;
+}
