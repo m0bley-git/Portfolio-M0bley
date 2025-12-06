@@ -1,53 +1,179 @@
-
-
-
-header {
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 80px;
+* {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 900px;
-    flex-direction: column;
-    
-}
-
-header h1, header p {
-    margin: 0;                
-}
-
-.soustitres {
-    color: grey;
-    font-size: 30px;
-    opacity: 0.7;
-    font-family:'Times New Roman', Times, serif
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/ /* Ligne pour voir ce qui depasse*/
 }
 
 body {
-    background-image: url(Images/accueil.jpg);
-    background-size: cover;
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
 }
+
+body h1 {
+    position: absolute;
+    color: white;
+    left: 790px;
+    top: 300px;
+    font-size: 6rem;
+    font-family: serif;
+    columns: 50px;
+}
+
+section {
+    color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+body h2 {
+    position: absolute;
+    color: white;
+    left: 700px;
+    bottom: 350px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.apropos-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    padding: 50px; 
+}
+
+body h3 {
+    position: absolute;
+    color: white;
+    left: 210px;
+    top: 1050px;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.textpropos {
+    position: relative;
+    top: 40px;
+    font-size: 1.25rem;
+    line-height: 50px;
+    max-width: 600px;
+}
+
+.imgpropos {
+    position: absolute;
+    top: 1080px;
+    left: min(70%, 1000px); 
+    width: 450px;
+    max-width: 90%;        
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+body h4 {
+    position: absolute;
+    color: white;
+    left: 210px;
+    top: 2000px;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 20px
+}
+
+.competence-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.imgcompetence {
+    position: relative;
+    top: 600px;
+    left: 230px;
+    transition: transform 0.3s ease;
+    width: 65px;
+    height: 65px;
+}
+
+.titrelogiciel {
+    position: relative;
+    top: 590px;
+    left: 230px;
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: calc(100vw - 250px);
+}
+
+body h5 {
+    position: absolute;
+    color: white;
+    left: 210px;
+    top: 3000px;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+body h6 {
+    position: absolute;
+    color: white;
+    left: 210px;
+    top: 4000px;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+body .fond1 {
+    background-color: #0a0a0a;
+}
+
+body .fond2 {
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body .fond3 {
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+}
+
+body .fond4 {
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+}
+
+body .fond5 {
+    background-color: #0a0a0a;
+}
+
 
 nav {
-    position: absolute;    
-    top: 10px;             
-    right: 20px;           
-    display: flex;
-    flex-direction: row; 
-    align-items: flex-end;  
-    gap: 40px;     
-    font-family: monospace;  
-}
-
-main h2 {
+    position: absolute;
     color: white;
-    text-align: left;
-    padding: 20px;
-    left: 20px;
-    font-size: 50px;
+    text-align: right;
+    top: 10px;
+    right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+     
 }
