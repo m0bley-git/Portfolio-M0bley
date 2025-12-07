@@ -84,7 +84,7 @@ body h4 {
     position: absolute;
     color: white;
     left: 210px;
-    top: 1900px;
+    top: 1950px;
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -93,7 +93,7 @@ body h4 {
 
 .textcomp {
     position: absolute;
-    margin-top: 250px;
+    margin-top: 290px;
     margin-left: 235px;
     font-size: 1.25rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -214,13 +214,27 @@ body .fond5 {
 }
 
 nav {
-    position: absolute;
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100%;           
+    height: 80px;         
+    background-color: #0a0a0a; 
     color: white;
-    text-align: right;
-    top: 10px;
-    right: 20px;
-    font-family: 'Times New Roman', Times, serif;
-     
+    z-index: 1000;         
+    display: flex;         
+    align-items: center; 
+    justify-content: flex-end;  
+    padding: 0 20px;       
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);     
+}
+
+nav a {
+    text-decoration: none;  
+    color: white;            
+    margin-right: 20px;     
+    font-size: 1rem;        
+    transition: color 0.3s; 
 }
 
 footer {
